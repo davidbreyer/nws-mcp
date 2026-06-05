@@ -25,7 +25,9 @@ The server uses stdio, so it will wait for an MCP client to speak to it. Running
 
 ## Example Client Config
 
-After building, point an MCP client at the compiled server:
+After building, point an MCP client at the compiled server. Replace the path with the location where you cloned this repo.
+
+Windows example:
 
 ```json
 {
@@ -33,8 +35,21 @@ After building, point an MCP client at the compiled server:
     "nws": {
       "command": "node",
       "args": [
-        "C:\\Users\\User\\Documents\\Codex\\2026-06-05\\what-does-it-take-to-make\\work\\nws-mcp\\dist\\index.js"
+        "C:\\path\\to\\nws-mcp\\dist\\index.js"
       ]
+    }
+  }
+}
+```
+
+macOS/Linux example:
+
+```json
+{
+  "mcpServers": {
+    "nws": {
+      "command": "node",
+      "args": ["/path/to/nws-mcp/dist/index.js"]
     }
   }
 }
