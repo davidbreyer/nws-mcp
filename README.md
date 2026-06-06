@@ -2,6 +2,8 @@
 
 A small learning MCP server for the public [National Weather Service API](https://www.weather.gov/documentation/services-web-api).
 
+This repo is intended as an educational example of a simple Model Context Protocol (MCP) server. It focuses on a small read-only API wrapper so the core MCP ideas are easy to see: define tools, validate inputs, call an API, and return useful results to an AI client.
+
 It exposes read-only tools over stdio:
 
 - `get_forecast`
