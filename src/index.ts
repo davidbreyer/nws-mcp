@@ -5,7 +5,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 
 const NWS_BASE_URL = "https://api.weather.gov";
-const USER_AGENT = "nws-mcp-learning-project/0.1 (github.com/learning-project)";
+const USER_AGENT = "nws-mcp/0.1 (https://github.com/davidbreyer/nws-mcp)";
 
 type PointResponse = {
   properties: {
